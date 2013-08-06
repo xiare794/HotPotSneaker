@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+/* 
+++++++++++++++++++++++++++++++++++++++++++++++
+
+	Last Updated: June 10, 2011
+
+	1.define
+	2.#side
+		2-1.#globalnav
+		2-2.#mail
+		2-3.#search
+		2-4.#newsFlash
+	3.#body
+		4-1.#globalnav
+		4-2.#sub
+		4-3.#sub
+	4.#footer
+		4-1.#footerNav
+	5.browser hacks
+
+++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+/*----------------------------------
+ 1.define
+------------------------------------*/
+html, body {
+	height: 99.99%;
+}
+html {
+	min-width: 1002px;
+}
+body {
+	color: #000;
+	background: #fff;
+	border-top: 1px solid #fff;
+}
+#header,#search,#nav,#body,#footer {
+	text-align: left;
+}
+#wrapper {
+	height: auto;
+	min-height: 100%;
+	position: relative;
+	min-width: 1000px;
+	border-bottom: 1px solid #fff;
+	background: url(../../images/common/logo_bk.png) no-repeat 20px bottom;
+}
+
+
+/*----------------------------------
+ 2.#side
+------------------------------------*/
+#side {
+	position: absolute;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	margin: auto;
+	padding: 0 0 0 1px;
+	background: #000 url(../../images/common/bg_1px_wh.gif) repeat-y left top;
+	border-right: 1px solid #fff;
+}
+h1 {
+	height: 37px;
+}
+h1 a {
+	text-indent: -9999px;
+	width: 300px;
+	height: 36px;
+	display: block;
+	background: url(../../images/common/h1.jpg) no-repeat right top;
+}
+h1 img {
+	margin: 1px;
+}
+#side p {
+	text-align: right;
+	width: 300px;
+}
+
+
+/*----------------------------------
+ 2-1.#globalnav
+------------------------------------*/
+#globalNav {
+	width: 300px;
+}
+#globalNav ul {
+	width: 150px;
+	height: 198px;
+	padding: 1px 0 0 0;
+	float: left;
+	overflow: hidden;
+	background: url(../../images/common/bg_nav.gif) no-repeat left top;
+}
+#globalNav ul li {
+	vertical-align: bottom;
+	width: 150px;
+	height: 38px;
+	padding-bottom: 1px;
+}
+#globalNav ul li a {
+	text-decoration:none;
+	line-height: normal;
+	text-indent: -9999px;
+	width: 150px;
+	height: 38px;
+	display: block;
+}
+
+/* gnNews */
+#globalNav ul li#gnNews a {
+	background: url(../../images/common/nav_news.gif) no-repeat left top;
+}
+#globalNav ul li#gnNews a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnNews strong a {
+	background-position: -300px top;
+}
+/* gnFeature */
+#globalNav ul li#gnFeature a {
+	background: url(../../images/common/nav_feature.gif) no-repeat left top;
+}
+#globalNav ul li#gnFeature a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnFeature strong a {
+	background-position: -300px top;
+}
+/* gnThink */
+#globalNav ul li#gnThink a {
+	background: url(../../images/common/nav_think.gif) no-repeat left top;
+}
+#globalNav ul li#gnThink a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnThink strong a {
+	background-position: -300px top;
+}
+/* gnBlog */
+#globalNav ul li#gnBlog a {
+	background: url(../../images/common/nav_blog.gif) no-repeat left top;
+}
+#globalNav ul li#gnBlog a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnBlog strong a {
+	background-position: -300px top;
+}
+
+/* gnMaps */
+#globalNav ul li#gnMaps a {
+	background: url(../../images/common/nav_map.gif) no-repeat left top;
+}
+#globalNav ul li#gnMaps a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnMaps strong a {
+	background-position: -300px top;
+}
+/* gnInfo */
+#globalNav ul li#gnInfo a {
+	background: url(../../images/common/nav_info.gif) no-repeat left top;
+}
+#globalNav ul li#gnInfo a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnInfo strong a {
+	background-position: -300px top;
+}
+/* gnStore */
+#globalNav ul li#gnStore a {
+	background: url(../../images/common/nav_store.gif) no-repeat left top;
+}
+#globalNav ul li#gnStore a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnStore strong a {
+	background-position: -300px top;
+}
+/* gnTt */
+#globalNav ul li#gnTt a {
+	background: url(../../images/common/nav_tt.gif) no-repeat left top;
+}
+#globalNav ul li#gnTt a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnTt strong a {
+	background-position: -300px top;
+}
+/* gnPrime */
+#globalNav ul li#gnPrime a {
+	background: url(../../images/common/nav_prime.gif) no-repeat left top;
+}
+#globalNav ul li#gnPrime a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnPrime strong a {
+	background-position: -300px top;
+}
+/* gnPrime */
+#globalNav ul li#gnPlog a {
+	background: url(../../images/common/nav_plog.gif) no-repeat left top;
+}
+#globalNav ul li#gnPlog a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnPlog strong a {
+	background-position: -300px top;
+}
+/* gnStand */
+#globalNav ul li#gnStand a {
+	background: url(../../images/common/nav_stand_def.gif) no-repeat left top;
+}
+#globalNav ul li#gnStand a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnStand strong a {
+	background-position: -300px top;
+}
+/* gnHnyeeseye */
+#globalNav ul li#gnHnyeeseye a {
+	background: url(../../images/common/nav_hnyeeseye_def.gif) no-repeat left top;
+}
+#globalNav ul li#gnHnyeeseye a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnHnyeeseye strong a {
+	background-position: -300px top;
+}
+
+/* gnFatale */
+#globalNav ul li#gnFatale a {
+	background: url(../../images/common/nav_fatale.gif) no-repeat left top;
+}
+#globalNav ul li#gnFatale a:hover {
+	background-position: -150px top;
+}
+#globalNav ul li#gnFatale strong a {
+	background-position: -300px top;
+}
+
+/*----------------------------------
+ 2-3.#banner
+------------------------------------*/
+#banner {
+	height: 250px;
+	clear: both;
+	background: url(../../images/common/bg_banner_main.gif) no-repeat left top;
+}
+
+
+/*----------------------------------
+ 2-2.#mail
+------------------------------------*/
+#mail {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+
+/*----------------------------------
+ 2-3.#search
+------------------------------------*/
+#search {
+	width: 300px;
+	background: url(../../images/common/bg_side3.gif) no-repeat left bottom;
+	clear: both;
+}
+#search form {
+	padding: 8px 12px;
+}
+#search dl {
+}
+#search dl dt {
+	width: 210px;
+	float: left;
+	clear: both;
+}
+#search dl dd  {
+	width: 60px;
+	margin: 0 0 0 210px;
+}
+#search dl dd img {
+	margin: 0 0 0 5px;
+}
+input.search {
+	font-size: 77%;
+	color: #fff;
+	width: 202px;
+	height: 16px;
+	background: #666;
+	border: 1px solid #000;
+}
+input.search:hover {
+	border: 1px solid #fff;
+}
+input.search:focus {
+}
+
+
+/*----------------------------------
+ 2-4.#newsFlash
+------------------------------------*/
+#newsFlash {
+	width: 300px;
+	height: 347px;
+	/*height: 217px;*/
+	background: #000 url(../../images/common/bg_news_flash.gif) no-repeat left bottom;
+	clear: both;
+}
+#news_Flash p {
+	color: #fff;
+	font-size: 77%;
+	text-align: center;
+	padding: 80px 0 0;
+}
+#news_Flash p a {
+	color: #c00;
+}
+#news_Flash p a:hover {
+	text-decoration: underline;
+}
+
+
+/*----------------------------------
+ 3.#body
+------------------------------------*/
+#body {
+	font-size: 85%;
+	min-height: 1026px;
+	margin-right: 300px;
+}
+
+
+/*------------------------------------
+ 4.footer
+------------------------------------*/
+#footer {
+	position: absolute;
+	width: 305px;
+	right: 0;
+	bottom: 0;
+	background: url(../../images/common/bg_side_b.gif) no-repeat right bottom;
+}
+
+/* footerNav */
+#footerNav {
+	font-size: 77%;
+}
+#footerNav ul {
+	width: 146px;
+	float: left;
+	margin: 20px 0;
+}
+#footerNav ul li {
+	padding: 3px 14px;
+}
+/* footermenu link-style */
+#footerNav ul li a {
+	color: #fff;
+	padding: 0 0 0 8px;
+	background: url(../../images/common/bg_arrow_wh.gif) no-repeat left .4em;
+}
+#footerNav ul li a:hover {
+	color: #c00;
+	text-decoration: none;
+	background: url(../../images/common/bg_arrow_red.gif) no-repeat left .4em;
+}
+
+#footerOther {
+	clear: both;
+	overflow: hidden;
+	margin: 10px 0;
+}
+address {
+	width: 207px;
+	overflow: hidden;
+	float: left;
+}
+address img {
+	margin: 0 0 0 15px;
+}
+#footer p {
+	width: 98px;
+	float: left;
+}
+
+#footerOther {
+	position: relative;
+	height: 12px;
+}
+#footerOther p {
+	position: absolute;
+	right: 0;
+}
+
+/*------------------------------------
+ 5.browser hacks
+------------------------------------*/
+
+/* Opera Bug Fix */
+
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+	html,body { min-height:100%; } /* Unintended bottom margin */
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items bgAlign="TC" changeTime="7">
+    <item date="2013.07.18" category="FEATURE" color_logo="FFFFFF" color_over="DBDBDB" image_main="imgfile/top_images/0718_reebok_verbal.jpg" image_thumb="" image_title="imgfile/top_images/0718_reebok_verbal.png">
+        <title>reebok</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/reebok_verbal/]]></link>
+    </item>
+    <item date="2013.07.19" category="3q" color_logo="D2EFDF" color_over="EAFFF7" image_main="imgfile/top_images/0719_sacai.jpg" image_thumb="" image_title="imgfile/top_images/0719_sacai.png">
+        <title>not sacai</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/sacai/]]></link>
+    </item>
+    <item date="2013.07.12" category="FEATURE" color_logo="00e022" color_over="43B8EA" image_main="imgfile/top_images/0712_volcom.jpg" image_thumb="" image_title="imgfile/top_images/0712_volcom.png">
+        <title>VOLCOM FOOTWEAR</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/volcom_footwear/]]></link>
+    </item>
+</items>

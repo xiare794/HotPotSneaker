@@ -1,0 +1,205 @@
+#side{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: #111111;
+	color: fuchsia;
+	width: 300px;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	border-left: 1px solid #DDD ;
+}
+#sideLogo{
+	width: 100%;
+	background: #F2F2F2;
+}
+
+#sideNav{
+	padding-top: 5px;
+}
+
+#sideNav li{
+	width: 150px;
+	height: 38px;
+	float: left;
+	text-decoration: none;
+	display: block;
+	text-indent: -9999px;
+}
+#sideNav a{
+	background-image: url('../bg/nav_Sprite.jpg');
+	display: block;
+	width: 150px;
+	height: 38px;
+}
+#sideNav a:hover{
+	background-position-x: -150px;
+}
+#sideNavInfo a{
+	background-position-y: -38px;
+}
+#sideNavFeature a{
+	background-position-y: -76px;
+}
+#sideNavStand a{
+background-position-y: -114px;
+}
+#sideNavThink a{
+background-position-y: -152px;
+}
+#sideNavBlog a{
+	background-position-y: -190px;
+}
+#sideNavFeTa a{
+	background-position-y: -228px;
+}
+
+#mail{
+	overflow: hidden;
+}
+#mail a{
+	clear: both;
+	display: block;
+	text-indent: 999px;
+	height: 36px;
+	background-image: url('../bg/nav_Sprite.jpg');
+	background-position-y: -266px;
+}
+#mail a:hover{
+	background-position-y: -302px;
+}
+
+#banner a{
+	width: 300px;
+	height: 250px;
+	display: inline;
+}
+
+#search {
+	
+	float: left;
+	padding: 8px 11px 8px 11px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #FFF;
+}
+#search input{
+	font-size: 70%;
+	width: 202px;
+	height: 16px;
+	border: 1px solid #000;
+	background: #666;
+	color: #FFF;
+}
+#newsflashtab{
+	overflow: hidden;
+}
+#newsflashtab li a{
+	float: left;
+	width: 72px;
+	text-indent: 990px;
+	background-image: url('../bg/flashNewsBtn.jpg');
+	border: 1px solid #333;
+}
+#newsFlash p {
+	color: #666;
+	line-height: 10px;
+	clear: both;
+	margin: 3px;
+	margin-left: 15px;
+	font-size: 12px;
+}
+#btnnews{
+	background-position-x: -73px;
+}
+#btnfeature{
+	background-position-x: -146px;
+}
+#btnthink{
+	background-position-x: 73px;
+}
+
+#newsflashtab li a:hover
+{
+	background-position-y: -20px;
+}
+
+#tabcontainer{
+	height: 160px;
+	background: #000;
+	display: block;
+	overflow: auto;
+	border: 1px solid #333;
+}
+
+.tabcontent{
+	
+	font-size: 12px;
+	line-height: 14px;
+	background: #000;
+	text-decoration: none;
+	
+}
+.tabcontent a{
+	color: #FFF;
+}
+.tabcontent a:hover{
+	color: #666;
+}
+.tabcontent span{
+	display: block;
+	float: left;
+	width: 200px;
+	height: 3.2em;
+	line-height: 18px;
+	overflow: hidden;
+	margin-left: 12px;
+}
+.tabcontent li{
+	
+	color: #FFF;
+	overflow: hidden;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.tabcontent img{
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding: 5px;
+}
+
+#roadmap{
+	/*display: block;
+	overflow: auto;
+	min-height: 50px;
+	position: absolute;
+	bottom: 40px;
+	margin: 5px;*/
+	width: 302px;
+	height: 125px;
+	margin-top: 895px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 200;
+}
+#roadmap li{
+	display: block;
+	float: left;
+	width: 140px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	padding: 5px;
+	font-size: 70%;
+}
+#roadmap a{
+	color: #FFF;
+	text-decoration: none;
+}
+#roadmap a:hover{
+	color: #666;
+}
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items bgAlign="TC" changeTime="7">
+    <item date="2013.07.19" category="FEATURE" color_logo="D2EFDF" color_over="EAFFF7" image_main="imgfile/top_images/0719_sacai.jpg" image_thumb="" image_title="imgfile/top_images/0719_sacai.png">
+        <title>sacai</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/sacai/]]></link>
+    <item><date>2013.07.28</date><color_logo>FFF</color_logo></item><item><date>2013.07.28</date><color_logo>FFF</color_logo></item></item>
+    <item date="2013.07.18" category="FEATURE" color_logo="FFFFFF" color_over="DBDBDB" image_main="imgfile/top_images/0718_reebok_verbal.jpg" image_thumb="" image_title="imgfile/top_images/0718_reebok_verbal.png">
+        <title>reebok</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/reebok_verbal/]]></link>
+    </item>
+    <item date="2013.07.12" category="FEATURE" color_logo="00e022" color_over="43B8EA" image_main="imgfile/top_images/0712_volcom.jpg" image_thumb="" image_title="imgfile/top_images/0712_volcom.png">
+        <title>VOLCOM FOOTWEAR</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/volcom_footwear/]]></link>
+    </item>
+    <item date="2013.07.12" category="FEATURE" color_logo="FFFFFF" color_over="F4F4F4" image_main="imgfile/top_images/0712_saintlaurent.jpg" image_thumb="" image_title="imgfile/top_images/0712_saintlaurent.png">
+        <title>サンローラン</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/saintlaurent/]]></link>
+    </item>
+    <item date="2013.07.11" category="FEATURE" color_logo="38638D" color_over="4279A0" image_main="imgfile/top_images/0711_undercoverism.jpg" image_thumb="" image_title="imgfile/top_images/0711_undercoverism.png">
+        <title>undercoverism</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/undercoverism/]]></link>
+    </item>
+    <item date="2013.07.10" category="FEATURE" color_logo="000000" color_over="FF1C25" image_main="imgfile/top_images/0710_towatei_lucky.jpg" image_thumb="" image_title="imgfile/top_images/0710_towatei_lucky.png">
+        <title>tei towa</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/towatei_lucky/]]></link>
+    </item>
+    <item date="2013.07.08" category="FEATURE" color_logo="FFFFFF" color_over="E84458" image_main="imgfile/top_images/0708_yoskeaizawa.jpg" image_thumb="" image_title="imgfile/top_images/0708_yosukeaizawa.png">
+        <title>YOSUKE AIZAWA</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/yosuke_aizawa/]]></link>
+    </item>
+    <item date="2013.07.05" category="FEATURE" color_logo="FFFFFF" color_over="B1CABB" image_main="imgfile/top_images/0705_makr.jpg" image_thumb="" image_title="imgfile/top_images/0705_makr.png">
+        <title>MAKR</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/makr/]]></link>
+    </item>
+    <item date="2013.07.02" category="FEATURE" color_logo="FFFFFF" color_over="cccccc" image_main="imgfile/top_images/0628_bape_playboy.jpg" image_thumb="" image_title="imgfile/top_images/0628_bape_playboy.png">
+        <title>APE PLAYBOY</title>
+        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/bape_playboy/]]></link>
+    </item>
+</items>
