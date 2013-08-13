@@ -2,6 +2,7 @@ var Items = [];
 var currentIdx = 0;
 
 function updateCurrentItem() {
+	//更新表格部分
 	currentIdx = $("#selectItem").val();
 	console.log("selectItem  = "+currentIdx);
 	$('#form_date').val(Items[currentIdx].date);
@@ -13,8 +14,15 @@ function updateCurrentItem() {
 	$('#form_image_title').val(Items[currentIdx].image_title); 
 	$('#form_title').val(Items[currentIdx].title); 
 	$('#form_link_target').val(Items[currentIdx].link_target);
-	
 	$('#itemIndex').html(parseInt(currentIdx)+1); 
+	
+	//更新预览部分
+	$('#bg_image').attr('src',Items[currentIdx].image_main);
+	$('#logo_image').attr('src',Items[currentIdx].image_title);
+	$('#logo_image_hover').attr('src',Items[currentIdx].image_title.split('.')[0]+"_over.png");
+	$('#normalReview').css('color','#'+$('#form_color_logo').val());
+	$('#hoverReview').css('color','#'+$('#form_color_over').val());
+	//设置刷新等待标示
 }
 
 //主图响应
@@ -58,72 +66,61 @@ $('#refresh').click(function () {
 	//console.log($('#normalReview'));
 	
 });
+//after add/delete/save action
+function reloadXMLFile() {
+	$.ajax({
+		        type: "GET",
+			url: "top.xml",
+			dataType: "xml",
+			cache:false,
+			success: function(xml) {
+				var output = "";
+				
+				var idx = 0;
+				
+				if( $.isNumeric($('#itemIndex').html()) ){
+					idx = parseInt($('#itemIndex').html());
+				}
+				console.log("itemIndex="+idx);
+		 		$(xml).find('item').each(function(){
+		 			
+		 			var item = new Object();
+		 				 			
+		 			item.date = $(this).attr('date');
+					item.category = $(this).attr('category');
+					item.color_logo = $(this).attr('color_logo');
+					item.color_over = $(this).attr('color_over');
+					item.image_main = $(this).attr('image_main');
+					item.image_thumb = $(this).attr('image_thumb');
+					item.image_title = $(this).attr('image_title');
+					item.title = $(this).find('title').text();
+					item.link_target = $(this).find('link').attr('target');
+					
+					
+					Items.push(item);
+				});
+				
+				//update select component
+				var selOpt = "";
+				var selcount = 0;
+				for(var i=0; i<Items.length; i++){
+					selOpt += "<option value = '"+i+"'>"+i+Items[i].title+"</option>";
+				}
+				//$("#tbody").html ( output );
+			$("#selectItem").html(selOpt);
+			$("#selectItem").val(idx);
+			console.log(Items);
+			updateCurrentItem();
+		}
+		
+	});
+
+
+}
 
 $(document).ready(function () {
-	
-	$.ajax({
-	        type: "GET",
-		url: "top.xml",
-		dataType: "xml",
-		success: function(xml) {
-			var output = "";
-			
-			var idx = 0;
-			
-			if( $.isNumeric($('#itemIndex').html()) )
-			idx = parseInt($('#itemIndex').html());
-			console.log("itemIndex="+idx);
-//			if($('#itemIndex').val(){
-//				if($_GET['currentItem'] != 0)
-//				idx = $_GET['currentItem'];
-//			}
-	 		$(xml).find('item').each(function(){
-	 			
-	 			var item = new Object();
-	 			//add operate btn edit,moveup,movedown
-//	 			output += "<tr>"
-//	 			output += "<td><button class=\"btn\" id=\""+idx+"\">修改</button></td>";
-//	 			output += "<td>"+item.date+"</td>";
-//	 			output += "<td>"+item.category+"</td>";
-//	 			output += "<td>"+item.color_logo+"</td>";
-//	 			output += "<td>"+item.color_over+"</td>";
-//	 			output += "<td>"+item.image_main+"</td>";
-//	 			output += "<td>"+item.image_thumb+"</td>";
-//	 			output += "<td>"+item.image_title+"</td>";
-//	 			output += "<td>"+item.title+"</td>";
-//	 			output += "<td>"+item.link_target+"</td>";
-//	 			output += "</tr>";
-	 			
-	 			item.date = $(this).attr('date');
-				item.category = $(this).attr('category');
-				item.color_logo = $(this).attr('color_logo');
-				item.color_over = $(this).attr('color_over');
-				item.image_main = $(this).attr('image_main');
-				item.image_thumb = $(this).attr('image_thumb');
-				item.image_title = $(this).attr('image_title');
-				item.title = $(this).find('title').text();
-				item.link_target = $(this).find('link').attr('target');
-				
-				
-				Items.push(item);
-			});
-			
-			//update select component
-			var selOpt = "";
-			var selcount = 0;
-			for(var i=0; i<Items.length; i++){
-				selOpt += "<option value = '"+i+"'>"+i+Items[i].title+"</option>";
-			}
-			//$("#tbody").html ( output );
-		$("#selectItem").html(selOpt);
-		$("#selectItem").val(idx);
-		console.log(Items);
-		updateCurrentItem();
-	}
-	
-  });
-  
-  
+	reloadXMLFile();
+	console.log("reload xml once");
 });
 
 

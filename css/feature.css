@@ -21,6 +21,7 @@ ul,li,ol{
 #content{
 	/*background: url('bg/bg1.jpg');*/
 	height: 100%;
+	margin-right: 300px;
 	/*min-height: 900px;*/
 	/*position: absolute;*/
 	/*left: 0px;
@@ -208,11 +209,36 @@ body #content {
 	line-height: 1.2;
 	margin: 0 0 5px;
 }
+/*----------------------------------
+ .breadcrumb
+------------------------------------*/
+ul.breadcrumb a{
+	color: #c00;
+	text-decoration: none;
+	padding: 0px 2px;
+}
+
+ul.breadcrumb a:hover{
+	color: #f30;
+	text-decoration: underline;
+}
+
+ul.breadcrumb {
+font-size: 85%;
+margin: 0 0 0 18px;
+}
+ul.breadcrumb li {
+	color: #666;
+	display: inline;
+}
+
+
+
 
 /*----------------------------------
  .pagination
 ------------------------------------*/
-.pagination {
+/*.pagination {
 	text-align: center;
 	margin:  0 auto;
 	padding: 40px 0 80px;
@@ -278,5 +304,5 @@ body #content {
 }
 .pagination ul.bottom {
 	padding: 20px 0 50px;
-}
+}*/
 

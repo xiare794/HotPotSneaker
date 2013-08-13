@@ -11,34 +11,44 @@
 		<!--<link rel="stylesheet" href="bootstrap.min.css" />-->
 		<link rel="stylesheet" href="css/feature.css"/>
 		<link rel="stylesheet" href="css/side.css"/>
-		<link rel="stylesheet" href="css/paginatestyle.css" />
-		<?php include("db_connection.php"); ?>
+		<?php include("db_connection.php") ?>
+		<?php 
+			$result;
+			if(isset($_GET['uid'])){
+				
+				//insert items
+				$query = "SELECT * FROM items";
+				$query .= " WHERE uid = ".$_GET["uid"].";";
+				//echo $query;
+				$resultPage = mysql_query($query);
+				if(!$resultPage)
+					echo "failed";
+				else {
+					while($row=mysql_fetch_array($resultPage)){
+						$result = $row;		
+						//echo $result['title'];	
+					}
+				}
+			}       
+		?>	
+		
 	</head>
 	<body id="body">
-		<?php include("side.php") ?>
 		<div id="header">
 			<h1 id="headLogo"></h1>
-			<h2>Now, analyze the honeycomb basis worried about "people," "thing" and "thing".</h2>
-			<div style="float: left;">
-				<a href="#">HOME</a>><a href="#">FEATURE</a>
-			</div>
-		</div>
-		<div id="content">
-			<div id="listContent">
-
 			
-			</div>
-			<br class="clearfix" />
-			<div class="pagination">
-				   <div id="pagination"></div>
-			      <br class="fl-clear">
-			      <p><a href="http://archive.honeyee.com/feature/index.html" onclick="return false"><img class="rollover" src="http://www.honeyee.com/images/feature/archive.gif" alt="以往精选专题"></a></p>
-			      <!-- /pagination -->
-			    </div>
-			<div id="footLogo"></div>
+			<ul class="breadcrumb" style="margin-bottom: 5px;">
+			  <li><a href="index.php">Home</a>></li>
+			  <li><a href="features.php">Featrue</a>></li>
+			  <li><?php echo $result['title']; ?></li>
+			</ul>
+		</div>
+		<?php include("side.php"); ?>
+		<div id="content" style="float: left; width: 3000px;">
+			<?php echo urldecode($result['content']); ?>
 				
 		</div>
-		
+		<div id="footLogo" class="svg" ></div>
 		
 		
 		<script src="js/jquery.js" type="text/javascript"></script>
@@ -72,9 +82,13 @@
 			$(document).ready(function () {
 				$.getJSON('dataItems.json', prepareFeatureListPage);
 			});
+			
+			
 		</script>
-		<script src="function.js" type="text/javascript"></script>
-		<script src="js/jquery.paginate.js" type="text/javascript"></script>
+		<!--<script src="bootstrap.js" type="text/javascript"></script>-->
+		<!--<script src="script.js" type="text/javascript"></script>-->
+
+		
 		
 		
 	</body>

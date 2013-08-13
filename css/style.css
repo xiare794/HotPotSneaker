@@ -23,7 +23,8 @@ ul,li,ol{
 	height: 100%;
 	width: 100%;
 	padding: 0px;
-	position: absolute;
+	/*position: absolute;*/
+	padding-left: 24px;
 }
 #mask
 {
@@ -35,9 +36,10 @@ ul,li,ol{
 	height: 100%;
 }
 #topflash #mainTitle{
-	position: absolute;
-	top: 130px;
-	left: 24px;
+	/*position: absolute;*/
+	/*top: 130px;
+	left: 24px;*/
+	padding-top: 30px;
 }
 
 #content{
@@ -59,8 +61,7 @@ ul,li,ol{
 #headLogoDiv{
 	left: 24px;
 	top: 5px;
-	position: absolute;
-	fill: yellow;
+	/*position: absolute;*/
 	
 	-webkit-animation: myanim 1s;
 	-moz-animation: myanim 1s;
@@ -84,48 +85,24 @@ ul,li,ol{
 	top: 0px;
 	left: 0px;
 	overflow: hidden;
-	-webkit-animation: myanim 1s;
-	-moz-animation: myanim 1s;
-	-o-animation: myanim 1s;
-	-ms-animation: myanim 1s;
-	animation: myanim 1s;
-}
-@-webkit-keyframes myanim {
-	0% 		{ opacity: 0.3;}
-	100% 	{ opacity: 1.0;}
-}
-@-moz-keyframes myanim {
-	0% 		{ opacity: 0.3;}
-	100% 	{ opacity: 1.0;}
-}
-@-ms-keyframes myanim {
-	0% 		{ opacity: 0.3;}
-	100% 	{ opacity: 1.0;}	
-}
-@-o-keyframes myanim {
-	0% 		{ opacity: 0.3;}
-	100% 	{ opacity: 1.0;}	
-}
-@keyframes myanim {
-	0% 		{ opacity: 0.3;}
-	100% 	{ opacity: 1.0;}	
 }
 
 
 #mainNav {
-	top: 300px;
-	left: 24px;
-	position: absolute;
+/*	top: 300px;
+	left: 24px;*/
+	/*position: absolute;*/
+	padding-top: 25px;
 }
 
 #mainNav li{
 	font-size: 40px;
 	line-height: 35px;
-	fill: yellow;
+	
 }
-#mainNav li :hover{
+/*#mainNav li :hover{
 	fill: grey;
-}
+}*/
 #footLogo {
 	position: absolute;
 	bottom: 5px;

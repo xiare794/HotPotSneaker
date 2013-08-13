@@ -2,13 +2,16 @@
 var Items = [];
 var colorcase = ["#00a0b0","#edc951","#003b6f","#743466","#9bcd9b","#666","#666","#777",];
 var baseColor = ["#FFF","#000","#FFF","#000","#FFF","#000","#FFF","#000","#FFF"]; 
-var bgImgs = [];//"bg/bg1.jpg","bg/bg2.jpg","bg/bg3.jpg","bg/bg4.jpg","bg/bg5.jpg","bg/bg6.jpg"];
+var bgImgs = [];
+var pngTitle =[];//"bg/bg1.jpg","bg/bg2.jpg","bg/bg3.jpg","bg/bg4.jpg","bg/bg5.jpg","bg/bg6.jpg"];
+var index=0;
 //加载存储top信息的XML
 function loadTopXML() {
 	$.ajax({
 	    type: "GET",
 		url: "top.xml",
 		dataType: "xml",
+		cache:false,
 		success: function(xml) {
 	 		$(xml).find('item').each(function(){
 	 			
@@ -28,11 +31,27 @@ function loadTopXML() {
 			});
 			for(var i=0; i<Items.length; i++){
 				 bgImgs.push(Items[i].image_main);
+				 pngTitle.push(Items[i].image_title,Items[i].image_title.split('.')[0]+"_over.png");
 				 console.log("here",Items[i].image_main);
 			}
+			console.log(pngTitle);
+			
+			//init
+			$('#bgImg').attr('src',Items[0].image_main);
+			$('#pngTitle').slideDown(1000,function () {$('#pngTitle').attr('src',pngTitle[0]); });
+		
+			$('#pngTitle').hover(
+				function () {$('#pngTitle').attr('src',pngTitle[1]);},
+				function () {$('#pngTitle').attr('src',pngTitle[0]);}
+			);
+			$('.svg').hover(
+				function () {$(this).css('fill',"#"+Items[0].color_over);},
+				function () {$(this).css('fill',"#"+Items[0].color_logo);}
+			);	
 		}
 		
 	});
+	
 }
 function prepareItems() {
 	
@@ -85,14 +104,14 @@ function importAllSvgFile() {
 $('#content').click( function () {
 	
 //	$(this).css("border","5px solid").delay(1000).css("background-image","url('bg/bg2.jpg')");
-	//alert("abc");
+	alert("abc");
 });
 
 function svgColorTransform(id,newcolor) {
 	//console.log($(id));
 	//console.log(newcolor);
 	$(id).animate({
-	    opacity: 0.25,
+	    opacity: 0,
 	  }, 500 ,function () {
 	  	$(id).css("fill",newcolor);
 	  	$(id).animate({ opacity: 1, }, 500 );
@@ -101,15 +120,16 @@ function svgColorTransform(id,newcolor) {
 }
 
 //color animation sample
-$('#headLogoDiv').click(function () {
-	$('#headLogoDiv').animate({
-	    opacity: 0.25,
-	  }, 500 ,function () {
-	  	$('#headLogoDiv').css("fill","white");
-	  	$('#headLogoDiv').animate({ opacity: 1, }, 500 );
-	  });
-
-});
+//字体颜色动画
+//$('#headLogoDiv').click(function () {
+//	$('#headLogoDiv').animate({
+//	    opacity: 0.25,
+//	  }, 500 ,function () {
+//	  	$('#headLogoDiv').css("fill","white");
+//	  	$('#headLogoDiv').animate({ opacity: 1, }, 500 );
+//	  });
+//
+//});
 
 //set backgroundWarper size
 function adjustSize() {
@@ -152,6 +172,10 @@ $(window).resize(resizeHandler);
 $(document).ready(function () {
 
 	loadTopXML();
+	
+	
+	//$('#bgImg').attr('src',Items[0].image_main);
+	
 	prepareItems();
 	//setInterval(myTimer,3000);
 	//setTimeout(showNextTop, 3000);
@@ -159,6 +183,7 @@ $(document).ready(function () {
 	adjustSize();
 	$('#mask').width = $(window).width;
 	
+
 });
 
 
@@ -187,13 +212,15 @@ function maskSlideHidden() {
 	  }, 'slow');
 	  
 	//4.svg gradient change
-	svgColorTransform("#headLogo",baseColor[item_num]);
-	svgColorTransform("#mainNavFeature",baseColor[item_num]);
-	svgColorTransform("#mainNavLocal",baseColor[item_num]);
-	svgColorTransform("#mainNavStore",baseColor[item_num]);
-	svgColorTransform("#mainNavNews",baseColor[item_num]);
-	svgColorTransform("#mainNavThink",baseColor[item_num]);
-	svgColorTransform("#footLogo",baseColor[item_num]);
+	console.log(Items[index].color_logo);
+	var color = "#"+Items[index].color_logo;
+	svgColorTransform("#headLogo",color);
+	svgColorTransform("#mainNavFeature",color);
+	svgColorTransform("#mainNavLocal",color);
+	svgColorTransform("#mainNavStore",color);
+	svgColorTransform("#mainNavNews",color);
+	svgColorTransform("#mainNavThink",color);
+	svgColorTransform("#footLogo",color);
 	
 	
 	//$("#mainNav li").mouseover('fill',colorcase[item_num]);
@@ -202,14 +229,27 @@ function maskSlideHidden() {
 }
 function changeImage() {
 
-	var index =	bgImgs.indexOf($('#bgImg').attr('src'));
+	index =	bgImgs.indexOf($('#bgImg').attr('src'));
 	if(index < bgImgs.length-1){
 		index ++;
 	}
 	else{
 		index = 0;
 	}
+	
 	$('#bgImg').attr('src',bgImgs[index]);
-//	console.log(bgImgs.indexOf($('#bgImg').attr('src')));
-	//setTimeout(maskSlideHidden, 1000);	
+	$('#mainTitle').slideUp(function () { 
+		$('#pngTitle').attr('src',pngTitle[index*2]);
+		$(this).slideDown(1000);
+	});
+	$('#pngTitle').hover(
+		function () {$('#pngTitle').attr('src',pngTitle[index*2+1]);},
+		function () {$('#pngTitle').attr('src',pngTitle[index*2]);}
+	);
+	$('.svg').hover(
+		function () {$(this).css('fill',"#"+Items[index].color_over);},
+		function () {$(this).css('fill',"#"+Items[index].color_logo);}
+	);	
 }
+
+

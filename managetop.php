@@ -21,8 +21,6 @@
 		}
 		closedir($handle);
 	}
-	//print_r($jpgArray);
-	//print_r($pngArray);
 ?>
 
 
@@ -116,7 +114,7 @@
 						<?php
 							if($_GET)
 							{
-								var_dump($_GET);
+								//var_dump($_GET);
 								if($_GET['action'] == "up"){
 									moveUpItem($_GET['currentItem']);
 								}
@@ -127,15 +125,18 @@
 						?>
 						<?php
 							if(isset($_POST) ){
-								var_dump($_POST);
+								//var_dump($_POST);
 								if(isset($_POST['save'])){
 									updateXMLChanges($_POST);
+									echo "执行保存";
 								}
 								if(isset($_POST['delete'])){
 									removeXMLChanges($_POST);
+									echo "执行删除";
 								}
 								if(isset($_POST['new'])){
 									newXMLChanges($_POST);
+									echo "执行新建";
 								}
 							}
 						?>
@@ -236,8 +237,7 @@
 					<div id="normalReview" style="position:absolute;  padding:30px; min-height: 500px; max-width: 300px;">
 						
 						<h1>+8629 Urbanlife</h1>
-						<img id="logo_image" src="upload/0712_saintlaurent.png" alt="" />
-						<h1 id="titleL">サンローラン</h1>
+						<img id="logo_image" style="min-width: 213px; min-height: 64px;" />
 						<p>FEATURE</p>
 						<p>NEWS</p>
 						<p>Think piece</p>
@@ -245,17 +245,16 @@
 					</div>
 					<div id="hoverReview" style="position:absolute; padding:30px; padding-left: 330px; min-height: 500px; max-width: 300px; ">
 						<h1>+8629 Urbanlife</h1>
-						<img id="logo_image_hover" src="upload/0712_saintlaurent.png" alt="" />
-						<h1 id="titleR">サンローラン</h1>
+						<img id="logo_image_hover" style="min-width: 213px; min-height: 64px;" />
 						<p>FEATURE</p>
 						<p>NEWS</p>
 						<p>Think piece</p>
 						<p>Store</p>
 					</div>
-					<div  style="padding: 20px; background-color: #000; width: 700px;">
+					<div  style="padding: 20px; background-color: #000; width: 700px; height: 700px; background-color: grey;">
 						<!--<div id="background" style="background-color:#F4F4F4; width: 50px; height: 50px;"></div>
 						<div id="cover" style="background-color:#FFF; width: 50px; height: 50px;"></div>-->
-						<img id="bg_image" src="upload/0712_saintlaurent.jpg" alt="" />
+						<img id="bg_image" />
 					</div>
 				</div>
 				<!--<div class="span2 bs-docs-sidebar tabbable tabs-left" >

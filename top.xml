@@ -1,48 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <items bgAlign="TC" changeTime="7">
-    <item date="2013.07.18" category="FEATURE" color_logo="FFFFFF" color_over="DBDBDB" image_main="upload/0718_reebok_verbal.jpg" image_thumb="" image_title="upload/0718_reebok_verbal.png">
-        <title>reebok</title>
+    <item date="2013.08.07" category="FEATURE" color_logo="ebebeb" color_over="6dcff6" image_main="upload/kobe_bryant_xian.jpg" image_thumb="" image_title="upload/kobe_bryant_xian.png">
+        <title>Kobe System</title>
         <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/reebok_verbal/]]></link>
     </item>
-    <item date="2013.12.01" category="FEATURE" color_logo="D2EFDF" color_over="EAFFF7" image_main="upload/0719_sacai.jpg" image_thumb="" image_title="upload/0719_sacai.png">
+    <item date="2013.12.01" category="FEATURE" color_logo="D2EFDF" color_over="EAFFF7" image_main="upload/0712_saintlaurent.jpg" image_thumb="" image_title="upload/0712_saintlaurent.png">
         <title>sacai</title>
         <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/sacai/]]></link>
     </item>
-    <item date="2013.07.12" category="FEATURE" color_logo="00e022" color_over="43B8EA" image_main="upload/0712_volcom.jpg" image_thumb="" image_title="upload/0712_volcom.png">
+    <item date="2013.07.12" category="FEATURE" color_logo="00e022" color_over="43B8EA" image_main="upload/Carwash_Cafe-Detroit.jpg" image_thumb="" image_title="upload/kobe_bryant_xian.png">
         <title>VOLCOM FOOTWEAR</title>
         <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/volcom_footwear/]]></link>
     </item>
-    <item date="2013.07.12" category="FEATURE" color_logo="FFFFFF" color_over="F4F4F4" image_main="upload/0712_saintlaurent.jpg" image_thumb="" image_title="upload/0712_saintlaurent.png">
-        <title>サンローラン</title>
-        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/saintlaurent/]]></link>
-    </item>
-    <item date="2013.07.11" category="FEATURE" color_logo="38638D" color_over="4279A0" image_main="upload/0711_undercoverism.jpg" image_thumb="" image_title="upload/0711_undercoverism.png">
-        <title>undercoverism</title>
-        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/undercoverism/]]></link>
-    </item>
-    <item date="2013.07.10" category="FEATURE" color_logo="000000" color_over="FF1C25" image_main="upload/0710_towatei_lucky.jpg" image_thumb="" image_title="upload/0710_towatei_lucky.png">
-        <title>tei towa</title>
-        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/towatei_lucky/]]></link>
-    </item>
-    <item date="2013.07.08" category="FEATURE" color_logo="FFFFFF" color_over="E84458" image_main="upload/0708_yoskeaizawa.jpg" image_thumb="" image_title="upload/0708_yosukeaizawa.png">
-        <title>YOSUKE AIZAWA</title>
-        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/yosuke_aizawa/]]></link>
-    </item>
-    <item date="2013.07.05" category="FEATURE" color_logo="FFFFFF" color_over="B1CABB" image_main="upload/0705_makr.jpg" image_thumb="" image_title="upload/0705_makr.png">
-        <title>MAKR</title>
-        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/makr/]]></link>
-    </item>
-    <item date="2013.07.02" category="FEATURE" color_logo="FFFFFF" color_over="cccccc" image_main="upload/0628_bape_playboy.jpg" image_thumb="" image_title="upload/0628_bape_playboy.png">
-        <title>APE PLAYBOY</title>
-        <link target="_top"><![CDATA[http://www.honeyee.com/feature/2013/bape_playboy/]]></link>
-    </item>
-<item date="" category="" color_logo="" color_over="" image_main="" image_thumb="" image_title="">
-        <title>sacai</title>
-        <link target=" "><![CDATA[http://www.honeyee.com/feature/2013/sacai/]]></link>
-    </item><item date="" category="" color_logo="" color_over="" image_main="" image_thumb="" image_title="">
-        <title>sacai</title>
-        <link target=" "><![CDATA[http://www.honeyee.com/feature/2013/sacai/]]></link>
-    </item><item date="2013.07.29" category="fETAURE" color_logo="FDEEFE" color_over="#FFF" image_main="upload/0712_saintlaurent.jpg" image_thumb="" image_title="upload/0712_saintlaurent.png">
-        <title>Title ELEven</title>
-        <link target="tar"><![CDATA[http://www.honeyee.com/feature/2013/sacai/]]></link>
-    </item></items>
+    
+    
+    
+    
+    
+    
+</items>

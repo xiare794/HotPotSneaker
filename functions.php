@@ -80,6 +80,7 @@
 			$res->setAttribute('image_title',$data['image_title']);
 			$res->getElementsByTagName("title")->item(0)->nodeValue = $data['title'];
 			$res->getElementsByTagName("link")->item(0)->setAttribute('target',$data['_link_target']);
+			//echo '<pre>' . htmlspecialchars($dom->saveXML()) . '</pre>';
 			$dom->save("top.xml");
 		}
 	}

@@ -2,13 +2,13 @@
 	<div id="sideLogo">+8629 sneaker Urban life </div>
 	<div id="sideNav">
 		<ul>
-			<li id="sideNavNews"><a title="News">News</a></li>
-			<li id="sideNavInfo"><a href="#" title="Info">Info</a></li>
-			<li id="sideNavFeature"><a href="feature.php" title="Feature">Feature</a></li>
+			<li id="sideNavNews"><a href="news.php" title="鲜货">News</a></li>
+			<li id="sideNavInfo"><a href="#" title="公告板">Info</a></li>
+			<li id="sideNavFeature"><a href="features.php" title="专题">Feature</a></li>
 			<li id="sideNavStand"><a href="#" title="HNYEE STAND">HNYEE STAND</a></li>
-			<li id="sideNavThink"><a href="#" title="Think">Think</a></li>
+			<li id="sideNavThink"><a href="interviews.php" title="想法">Think</a></li>
 			<li></li>
-			<li id="sideNavBlog"><a href="#" title="Blog">Blog</a></li>
+			<li id="sideNavBlog"><a href="weiboWall.php" title="微薄墙">Blog</a></li>
 			<li></li>
 			<li id="sideNavFeTa"><a href="#" title="Fe.Ta">Fe.Ta</a></li>
 			<li></li>
@@ -16,10 +16,7 @@
 	</div>
 	<div id="banner"><a href="#" title="banner"><img src="bg/banner_sample.jpg" alt="" /></a></div>
 	<div id="mail"><a href="#" title="mail us">mail</a></div>
-	<!--<form action="/search/" method="post">
-		<input type="search" name="search" value="" placeholder="search article" />
-		<input id="searchbtn" class="btn" type="submit" name="submit" value="submit" />
-	</form></div>-->
+
 	<div id="search"><form class="navbar-form pull-left">
 	  <input type="text" class="span3">
 	  <button type="submit" class="btn btn-inverse">search</button>
@@ -59,14 +56,14 @@
 				</ul>
 			</div>
 			<div id="sc3" class="tabcontent" style="display: block; ">
-				<ul>
+				<!--<ul>
 					<li><a href="http://blog.honeyee.com/ykajiwara/"><img src="http://www.honeyee.com/imgfile/blog/thumb_ykajiwara.jpg" width="40" height="40"><span><strong>4Nike Flyknit Lunar1+：</strong>free flyknit、楽しみ！ところで、先日原宿のナイキのショップ</span><span class="list_pubdate">July 19,2013 00:50</span></a></li>
 					<li><a href="http://blog.honeyee.com/ykajiwara/"><img src="http://www.honeyee.com/imgfile/blog/thumb_ykajiwara.jpg" width="40" height="40"><span><strong>5Nike Flyknit Lunar1+：</strong>free flyknit、楽しみ！ところで、先日原宿のナイキのショップ</span><span class="list_pubdate">July 19,2013 00:50</span></a></li>
 					<li><a href="http://blog.honeyee.com/ykajiwara/"><img src="http://www.honeyee.com/imgfile/blog/thumb_ykajiwara.jpg" width="40" height="40"><span><strong>Nike Flyknit Lunar1+：</strong>free flyknit、楽しみ！ところで、先日原宿のナイキのショップ</span><span class="list_pubdate">July 19,2013 00:50</span></a></li>
 					<li><a href="http://blog.honeyee.com/ykajiwara/"><img src="http://www.honeyee.com/imgfile/blog/thumb_ykajiwara.jpg" width="40" height="40"><span><strong>Nike Flyknit Lunar1+：</strong>free flyknit、楽しみ！ところで、先日原宿のナイキのショップ</span><span class="list_pubdate">July 19,2013 00:50</span></a></li>
 					<li><a href="http://blog.honeyee.com/ykajiwara/"><img src="http://www.honeyee.com/imgfile/blog/thumb_ykajiwara.jpg" width="40" height="40"><span><strong>Nike Flyknit Lunar1+：</strong>free flyknit、楽しみ！ところで、先日原宿のナイキのショップ</span><span class="list_pubdate">July 19,2013 00:50</span></a></li>
 					<li><a href="http://blog.honeyee.com/ykajiwara/"><img src="http://www.honeyee.com/imgfile/blog/thumb_ykajiwara.jpg" width="40" height="40"><span><strong>Nike Flyknit Lunar1+：</strong>free flyknit、楽しみ！ところで、先日原宿のナイキのショップ</span><span class="list_pubdate">July 19,2013 00:50</span></a></li>
-				</ul>
+				</ul>-->
 			</div>
 			<div id="sc4" class="tabcontent" style="display: block; ">
 				<ul>
@@ -92,3 +89,13 @@
 		</ul>
 	</div>
 </div>
+
+<script src="function.js" type="text/javascript"></script>
+<script>
+	//$(document).ready(function () {
+		console.log("prepareSideData() runs");
+	
+		prepareSideData();
+	//});
+</script>
+
